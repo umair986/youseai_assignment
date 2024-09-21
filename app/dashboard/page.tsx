@@ -1,15 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   LayoutDashboard,
-  FileText,
-  Tag,
-  Users,
   Settings,
   LogOut,
   ChevronLeft,
@@ -32,11 +28,8 @@ const sidebarItems = [
 ];
 
 export default function DashboardPage() {
-  //   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
       <aside className="hidden md:flex md:flex-col md:w-64 bg-white border-r">
         <div className="flex items-center justify-between p-4 border-b">
           <span className="text-xl font-semibold text-black">Brand</span>
@@ -120,7 +113,6 @@ export default function DashboardPage() {
           </div>
         </header>
 
-        {/* Page Content */}
         <main className="flex-1 overflow-y-auto p-4">
           <div className=" mx-auto">
             <h1 className="text-2xl font-semibold mb-4 text-black">
