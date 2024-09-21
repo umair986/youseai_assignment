@@ -28,15 +28,11 @@ import DashboardOne from "../components/dashboard";
 
 const sidebarItems = [
   { icon: LayoutDashboard, label: "Dashboard", href: "/dashboard" },
-  //   { icon: FileText, label: "Posts", href: "/dashboard/posts" },
-  //   { icon: Tag, label: "Categories", href: "/dashboard/categories" },
-  //   { icon: Tag, label: "Tags", href: "/dashboard/tags" },
-  //   { icon: Users, label: "Users", href: "/dashboard/users" },
   { icon: Settings, label: "Account", href: "/dashboard/account" },
 ];
 
 export default function DashboardPage() {
-  const [isOpen, setIsOpen] = useState(false);
+  //   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="flex h-screen bg-gray-100">
