@@ -40,9 +40,11 @@ export function TaskList({ tasks, onEditTask, onDeleteTask }: TaskListProps) {
     )
     .sort((a, b) => {
       if (sortBy === "dueDate") {
-        return (a.dueDate?.getTime() ?? 0) - (b.dueDate?.getTime() ?? 0);
+        const dueDateA = a?.dueDate?.getTime() ?? 0;
+        const dueDateB = b?.dueDate?.getTime() ?? 0;
+        return dueDateA - dueDateB;
       }
-      return a[sortBy].localeCompare(b[sortBy]);
+      return a?.[sortBy]?.localeCompare(b?.[sortBy] ?? "") ?? 0;
     });
 
   return (
