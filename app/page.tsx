@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Dashboard from "./api/components/dashboard";
+import DashboardPage from "./dashboard/page";
 
 export default function Home() {
   return (
     <div>
-      <Dashboard />
+      <DashboardPage />
     </div>
   );
 }
